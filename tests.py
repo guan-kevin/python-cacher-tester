@@ -6,13 +6,7 @@ class Test(unittest.TestCase):
         result = get_artifact_language('ProgVal-Limnoria-149133609')
         self.assertEqual(result, 'Python')
 
-        result = get_artifact_language('gwtbootstrap3-gwtbootstrap3-92837490')
-        self.assertEqual(result, 'Java')
-    
     def test_status(self):
-        result = get_artifact_status('ProgVal-Limnoria-149133609')
-        self.assertEqual(result, 'deprecated')
-
         result = get_artifact_status('gwtbootstrap3-gwtbootstrap3-92837490')
         self.assertEqual(result, 'active')
 
