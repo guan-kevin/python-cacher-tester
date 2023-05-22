@@ -1,0 +1,25 @@
+name: Main
+on: [push, pull_request]
+
+jobs:
+  test:
+      name: Test Cacher
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v3
+        - name: Update pip
+          run: pip install -U pip
+        - name: Install dependencies
+          run: pip install -r requirements.txt
+        - name: ETA
+          run: |
+            import datetime
+            from dateutil.relativedelta import relativedelta
+            dt = datetime.datetime.now()
+            print('Tis workflow run will finish before')
+            print(dt + relativedelta(minutes=1))
+          shell: python
+        - name: Run unit tests
+          run: python -m unittest
+        - name: Run git test
+          run: ./test_git.sh
