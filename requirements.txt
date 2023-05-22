@@ -1,0 +1,2 @@
+bugswarm-common
+git+https://github.com/dateutil/dateutil
