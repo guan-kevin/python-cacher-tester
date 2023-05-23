@@ -1,0 +1,7 @@
+name: This Workflow Has Multiple Jobs
+on: [push]
+jobs:
+  my_first_job:
+    name: My first job
+  my_second_job:
+    name: My second job
