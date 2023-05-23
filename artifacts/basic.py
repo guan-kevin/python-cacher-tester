@@ -8,4 +8,4 @@ def get_artifact_language(image_tag):
 def get_artifact_status(image_tag):
     bugswarmapi = DatabaseAPI()
     artifact = bugswarmapi.find_artifact(image_tag)
-    return artifact.json()['status']
+    return artifact.json()['lang']
