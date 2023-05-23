@@ -1,2 +1,2 @@
-bugswarm-common
+pyyaml
 git+https://github.com/dateutil/dateutil

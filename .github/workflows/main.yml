@@ -11,6 +11,8 @@ jobs:
           run: pip install -U pip
         - name: Install dependencies
           run: pip install -r requirements.txt
+        - name: Show installed dependencies
+          run: pip freeze
         - name: ETA
           run: |
             import datetime
