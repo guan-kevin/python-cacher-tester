@@ -23,3 +23,7 @@ jobs:
           run: python -m unittest
         - name: Run git test
           run: ./test_git.sh
+        - name: Run curl test
+          run: ./test_curl.sh
+        - name: Run wget test
+          run: ./test_wget.sh
